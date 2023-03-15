@@ -10,18 +10,14 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    color: black;
+    color: #000000;
     background-color: white;
-    overflow-x: hidden;
 }
 
 img {

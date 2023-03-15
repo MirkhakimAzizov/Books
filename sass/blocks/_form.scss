@@ -1,0 +1,51 @@
+.form {
+    padding: 100px;
+    &__inner {
+        @include flex(row, space-between, center);
+    }
+    &__label {
+        padding: 10px;
+        padding-left: 0px;
+        border: 2px solid rgb(0, 145, 255);
+        border-radius: 10px;
+        background-color: rgb(0, 145, 255);
+        &_btn {
+            @include font(normal, 500, 18px, 16px);
+            border: none;
+            background: rgb(0, 145, 255);
+            color: #FFF;
+        }
+    }
+    &__search {
+        padding: 8px 16px;
+        border-radius: 10px;
+        @include font(normal, 500, 18px, 16px);
+        border: 2px solid rgb(0, 145, 255);
+        &:focus {
+            outline: none;
+        }
+    }
+    &__save {
+        font-size: 35px;
+    }
+    &__basket {
+        position: absolute;
+        right: 50px;
+        top: 150px;
+        z-index: 2;
+        max-width: 350px;
+        max-height: 600px;
+        padding: 20px 20px;
+        background: #FFF;
+        display: none;
+    }
+}
+
+.toggle {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    border: 1px solid black;
+}

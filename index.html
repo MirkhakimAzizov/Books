@@ -5,13 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Books</title>
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.min.css">
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
 
+    <main class="main">
+
+        <section class="form">
+            <div class="container">
+                <div class="form__inner">
+                    <form action="#" class="form__el">
+                        <select class="form__select">
+                            <option style="visibility: hidden;">Name</option>
+                        </select>
+                        <label class="form__label">
+                            <input class="form__search" type="search" placeholder="Search">
+                            <button class="form__label_btn">Search</button>
+                        </label>
+                    </form>
+                    <button class="form__save">
+                        <i class='bx bxl-shopify'></i>
+                    </button>
+                    <ul class="form__basket"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="books">
+            <div class="container">
+                <div class="books__inner">
+                    <ul class="books__list">
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
 </body>
+<script src="./books.js"></script>
+<script src="./script.js"></script>
 
 </html>

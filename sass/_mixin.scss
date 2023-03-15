@@ -5,11 +5,11 @@
     align-items: $align;
 }
 
-@mixin flex($direction, $align, $justify) {
-    display: flex;
-    flex-direction: $direction;
-    align-items: $align;
-    justify-content: $justify;
+@mixin font($style, $weight, $size, $height) {
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
 }
 
 @mixin bg($url, $repeat, $position) {
