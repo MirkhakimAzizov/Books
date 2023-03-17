@@ -515,24 +515,27 @@ img {
   font-size: 35px;
 }
 .form__basket {
-  position: absolute;
-  right: 50px;
-  top: 150px;
-  z-index: 2;
   max-width: 350px;
   max-height: 600px;
   padding: 20px 20px;
   background: #FFF;
-  display: none;
-}
-
-.toggle {
-  display: grid;
   grid-template-columns: auto;
   gap: 30px;
   overflow-y: scroll;
   border-radius: 10px;
   border: 1px solid black;
+  display: none;
+}
+
+.toggle {
+  display: grid;
+}
+
+.div {
+  position: absolute;
+  right: 50px;
+  top: 150px;
+  z-index: 2;
 }
 
 .footer {
