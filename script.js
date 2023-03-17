@@ -11,7 +11,6 @@ let elSaveDun = document.createElement("ul");
 elSaveDun.setAttribute("class", "form__basket");
 
 
-
 books = books.map(item => {
     item.id = Math.random()
     return item
@@ -128,17 +127,7 @@ elSave.addEventListener("click", function(evt) {
 });
 
 
-elBtnSave.addEventListener("click", evt => {
-    evt.preventDefault();
 
-    if (basket.length > 0) {
-        elSave.classList.toggle("toggle");
-        elSave.append(elSaveDun);
-    } else {
-        alert("Hech qaysi kitob tanlanmagan !!!");
-    }
-
-})
 
 
 
@@ -170,3 +159,15 @@ function saveArr(arr) {
 
     });
 }
+
+elBtnSave.addEventListener("click", evt => {
+    evt.preventDefault();
+    elSave.appendChild(elSaveDun);
+    console.log(elSave);
+    if (basket.length > 0) {
+        elSave.classList.toggle("toggle");
+    } else {
+        alert("Hech qaysi kitob tanlanmagan !!!");
+    }
+
+})

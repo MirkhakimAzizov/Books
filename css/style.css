@@ -515,6 +515,10 @@ img {
   font-size: 35px;
 }
 .form__basket {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  z-index: 2;
   max-width: 350px;
   max-height: 600px;
   padding: 20px 20px;
@@ -524,7 +528,6 @@ img {
   overflow-y: scroll;
   border-radius: 10px;
   border: 1px solid black;
-  display: none;
 }
 
 .toggle {
